@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lens &mdash; NumaCore</title>
+<meta name="description" content="NumaCore Lens is the internal delivery engine behind Stride. Five panels &mdash; Pulse, Vitals, Horizon, Cadence, Deploy &mdash; running against a single shared file per client.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 54 54'%3E%3Cpath d='M27 4 L30 24 L50 27 L30 30 L27 50 L24 30 L4 27 L24 24 Z' fill='%235C58A8' opacity='0.3'/%3E%3Cpath d='M27 4 L30 24 L50 27 L30 30 L27 50 L24 30 L4 27 L24 24 Z' fill='none' stroke='%238883D4' stroke-width='2'/%3E%3Ccircle cx='27' cy='27' r='4' fill='%238883D4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Numa<span>Core</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn">Menu</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="lens.html" class="active">Lens</a></li>
+      <li><a href="stride.html">Stride</a></li>
+      <li><a href="origin.html">Origin</a></li>
+      <li><a href="mailto:info@numacore.ca?subject=Stride%20enquiry" class="nav-cta">Enquire about Stride</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header accent-lens">
+  <div class="hero-glow" style="width:380px; height:380px; top:-120px; right:6%; background:#0F6E56; opacity:0.4; filter:blur(60px); position:absolute; border-radius:50%; pointer-events:none;"></div>
+  <div class="container">
+    <span class="eyebrow">Lens &mdash; Delivery Engine</span>
+    <h1>The advisor's toolkit.</h1>
+    <p class="lede">Five panels, one shared file, one session at a time. Lens loads the client JSON at session start, hosts the work that follows, and saves at session end. Never distributed to clients. Always running in the advisor's hands.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The five panels</span>
+      <h2>Each panel owns one slice of the work.</h2>
+      <p class="lede">Pulse is the morning view. Vitals goes deep on a single unit. Horizon plans the long arc. Cadence builds the schedule. Deploy executes it. They share a single source of truth &mdash; the client file &mdash; and they never write into one another's data.</p>
+    </div>
+
+    <div class="panel-grid">
+
+      <a href="#pulse" class="panel-card">
+        <div class="pc2-glow" style="background:#E24B4A;"></div>
+        <div class="pc2-header">
+          <div>
+            <div class="pc2-eyebrow" style="color:#E24B4A;">Home panel</div>
+            <div class="pc2-name" style="color:#E24B4A;">Pulse</div>
+          </div>
+          <svg class="pc2-icon" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <polyline points="4,22 10,22 14,10 18,34 22,18 26,26 30,22 40,22" stroke="#E24B4A" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="pc2-body">Fleet vital signs at a glance. Attention items, alerts requiring action, the high-level summary a maintenance manager would want on the wall.</div>
+        <div class="pc2-extra">Pulse surfaces the units that need attention this morning &mdash; not the entire fleet, just the exceptions. Built around the principle that the advisor's first ten minutes should be answered by one screen.</div>
+        <div class="pc2-meta"><span class="pc2-status status-active">Active &middot; v3.5</span></div>
+      </a>
+
+      <a href="#vitals" class="panel-card">
+        <div class="pc2-glow" style="background:#1D9E75;"></div>
+        <div class="pc2-header">
+          <div>
+            <div class="pc2-eyebrow" style="color:#1D9E75;">Fleet health</div>
+            <div class="pc2-name" style="color:#1D9E75;">Vitals</div>
+          </div>
+          <svg class="pc2-icon" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" fill="none" stroke="#1D9E75" stroke-width="1.4"/>
+            <path d="M22 4 L36 10 L36 24 C36 32 22 40 22 40 C22 40 8 32 8 24 L8 10 Z" fill="#0D6B50" opacity="0.2"/>
+            <line x1="22" y1="15" x2="22" y2="29" stroke="#5DCAA5" stroke-width="1.6" stroke-linecap="round"/>
+            <line x1="15" y1="22" x2="29" y2="22" stroke="#5DCAA5" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pc2-body">Component health, unit by unit. Heatmap across the fleet, hero-view drill-down per machine, condition-monitoring overlay.</div>
+        <div class="pc2-meta"><span class="pc2-status status-active">Active &middot; v3.5</span></div>
+      </a>
+
+      <a href="#horizon" class="panel-card">
+        <div class="pc2-glow" style="background:#378ADD;"></div>
+        <div class="pc2-header">
+          <div>
+            <div class="pc2-eyebrow" style="color:#378ADD;">Fleet planner</div>
+            <div class="pc2-name" style="color:#378ADD;">Horizon</div>
+          </div>
+          <svg class="pc2-icon" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <line x1="4" y1="28" x2="40" y2="28" stroke="#378ADD" stroke-width="1.2" opacity="0.5"/>
+            <path d="M10 28 A12 12 0 0 1 34 28" fill="none" stroke="#378ADD" stroke-width="1.6" stroke-linecap="round"/>
+            <line x1="22" y1="10" x2="22" y2="15" stroke="#85B7EB" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="pc2-body">Long-range planning, brought into view. Utilisation profiles, SMU forecast, fleet hours, capital plan over a 3&ndash;5 year horizon.</div>
+        <div class="pc2-meta"><span class="pc2-status status-active">Active</span></div>
+      </a>
+
+      <a href="#cadence" class="panel-card">
+        <div class="pc2-glow" style="background:#BA7517;"></div>
+        <div class="pc2-header">
+          <div>
+            <div class="pc2-eyebrow" style="color:#BA7517;">PCR schedule</div>
+            <div class="pc2-name" style="color:#BA7517;">Cadence</div>
+          </div>
+          <svg class="pc2-icon" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <polygon points="22,6 36,38 8,38" fill="none" stroke="#BA7517" stroke-width="1.4"/>
+            <polygon points="22,6 36,38 8,38" fill="#7A4808" opacity="0.15"/>
+            <line x1="22" y1="38" x2="30" y2="16" stroke="#EF9F27" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="30" cy="15" r="2.8" fill="#EF9F27"/>
+          </svg>
+        </div>
+        <div class="pc2-body">Planned component replacement, on rhythm. Gantt timeline of every upcoming PCR, optimiser, resource loading, auto-build.</div>
+        <div class="pc2-extra">Cadence is the scheduling engine &mdash; the rolling two-year replacement plan that is the core deliverable of every Stride engagement. Date forecasting from utilisation profiles. Auto-clustering of components due in the same window on the same machine.</div>
+        <div class="pc2-meta"><span class="pc2-status status-active">Active &middot; v17</span></div>
+      </a>
+
+      <a href="#deploy" class="panel-card">
+        <div class="pc2-glow" style="background:#8883D4;"></div>
+        <div class="pc2-header">
+          <div>
+            <div class="pc2-eyebrow" style="color:#8883D4;">Project manager</div>
+            <div class="pc2-name" style="color:#8883D4;">Deploy</div>
+          </div>
+          <svg class="pc2-icon" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+            <path d="M22 6 C22 6 30 14 30 26 L22 34 L14 26 C14 14 22 6 22 6Z" fill="none" stroke="#8883D4" stroke-width="1.4"/>
+            <path d="M22 6 C22 6 30 14 30 26 L22 34 L14 26 C14 14 22 6 22 6Z" fill="#5C58A8" opacity="0.15"/>
+            <circle cx="22" cy="20" r="3.5" fill="none" stroke="#AFA9EC" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <div class="pc2-body">Execution, tracked from start to finish. Checklists, action items, meeting notes, phase tracking per shutdown.</div>
+        <div class="pc2-extra">Deploy is the bridge from "it's planned" to "it's done." Once Cadence locks a project, Deploy hosts the work package: pre-shutdown actions, day-of checklists, post-event closeout. One file per project, written in the same JSON the rest of Lens reads.</div>
+        <div class="pc2-meta"><span class="pc2-status status-active">Active &middot; v8</span></div>
+      </a>
+
+    </div>
+
+    <!-- Detail anchors for the three primary panels -->
+
+    <div class="panel-detail accent-pulse" id="pulse">
+      <span class="panel-detail-eyebrow">Pulse &middot; the morning view</span>
+      <h3>What surfaces here.</h3>
+      <p>Pulse is the home panel. It reads the same client file every other panel reads, and surfaces the units that need attention now &mdash; not because the heatmap is red across the board, but because a specific rule has fired. Pulse is opinionated: it does not show "everything," it shows what should be looked at.</p>
+      <ul>
+        <li>Fleet health summary &mdash; total units, units in workshop, units flagged for attention</li>
+        <li>Attention items &mdash; condition-monitoring alerts at "very high" band, components past benchmark, PCRs missing work orders</li>
+        <li>Upcoming events &mdash; the next thirty days of scheduled work, with confirmation status</li>
+      </ul>
+    </div>
+
+    <div class="panel-detail accent-cadence" id="cadence">
+      <span class="panel-detail-eyebrow">Cadence &middot; the scheduling engine</span>
+      <h3>Where the rolling plan lives.</h3>
+      <p>Cadence is the longest-running tool in the suite. The rolling two-year replacement plan that anchors every Stride engagement is built and maintained here. Date forecasting projects each component forward from current SMU and the unit's utilisation profile; the optimiser sequences projects against resource conflicts; auto-build clusters components due in the same window on the same machine into proposed packages.</p>
+      <ul>
+        <li>Schedule &mdash; configurable Gantt timeline of every upcoming PCR across the fleet</li>
+        <li>Optimiser &mdash; sequencing view; resource loading; conflict detection</li>
+        <li>Auto-Build &mdash; cluster components due in the same window on the same machine into project packages</li>
+        <li>Multi-cycle budget projection by fleet, year, and site</li>
+      </ul>
+    </div>
+
+    <div class="panel-detail accent-deploy" id="deploy">
+      <span class="panel-detail-eyebrow">Deploy &middot; execution layer</span>
+      <h3>From scheduled to done.</h3>
+      <p>Deploy is where confirmed projects become tracked work. Each project carries a structured work package &mdash; pre-shutdown checklists, day-of action items, meeting notes, phase tracking through the lifecycle. The terminology layer (Project / Shutdown / Outage) is configurable per client; the underlying data structure is the same.</p>
+      <ul>
+        <li>Per-project checklists and action items, persisted in the client file</li>
+        <li>Phase tracking from approval through planning, execution, and closeout</li>
+        <li>Meeting notes attached to the project, not stored in a parallel system</li>
+      </ul>
+    </div>
+
+    <div class="panel-detail accent-vitals" id="vitals">
+      <span class="panel-detail-eyebrow">Vitals &middot; component health detail</span>
+      <h3>Drill from fleet to component.</h3>
+      <p>Vitals is the deep view. Heatmap of component status across the fleet; hero-view drill-down per unit with components arranged around the machine; condition-monitoring overlay when oil-sample data is present. The view a planner uses to decide which units need attention this week.</p>
+    </div>
+
+    <div class="panel-detail accent-horizon" id="horizon">
+      <span class="panel-detail-eyebrow">Horizon &middot; long-range planning</span>
+      <h3>The 3&ndash;5 year arc.</h3>
+      <p>Horizon holds the long arc: utilisation profiles per unit, SMU forecast forward, fleet hours distribution, and the capital expenditure forecast that finance teams need to budget component replacements three to five years out.</p>
+    </div>
+
+    <div class="signal-strip">
+      <div>
+        <span class="eyebrow">Phase 4 &middot; forthcoming</span>
+        <h3>Signal &mdash; cross-client benchmarking.</h3>
+        <p>Signal is the long play. Every Stride engagement adds component-life data to a growing benchmark dataset, keyed by deterministic component IDs and a controlled vocabulary. At five clients, Signal will answer "your 793 engine is running 12% below benchmark for this operating profile" with the data behind the claim. Not a Lens panel today &mdash; a separate tool, deferred until the data depth justifies the build.</p>
+      </div>
+      <svg class="pc2-icon" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <path d="M10 34 A17 17 0 0 1 34 34" fill="none" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" opacity="0.4"/>
+        <path d="M14 29 A12 12 0 0 1 30 29" fill="none" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" opacity="0.6"/>
+        <path d="M18 24 A7 7 0 0 1 26 24" fill="none" stroke="#3DC9A0" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>
+        <circle cx="22" cy="20" r="2.8" fill="#5DCAA5"/>
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container-narrow">
+    <span class="eyebrow">Next</span>
+    <h2>The engine, in service of the offer.</h2>
+    <p class="lede">Lens is what runs every Stride engagement. Stride is the retainer service the engine delivers.</p>
+    <div class="btn-row">
+      <a href="stride.html" class="btn btn-primary">See Stride &rarr;</a>
+      <a href="platform.html" class="btn btn-ghost">Back to platform</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-brand">Numa<span>Core</span></a>
+      <p>The platform behind long-range component planning for mobile mining fleets. Built and operated by Birchwood Advisory.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="lens.html">Lens</a></li>
+        <li><a href="stride.html">Stride</a></li>
+        <li><a href="origin.html">Origin</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@numacore.ca">info@numacore.ca</a></li>
+        <li><a href="https://birchwood-advisory.com" target="_blank" rel="noopener">Birchwood Advisory &rarr;</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>&copy; 2026 NumaCore. All rights reserved.</span>
+    <span>Less noise. Better decisions.</span>
+  </div>
+</footer>
+
+</body>
+</html>
