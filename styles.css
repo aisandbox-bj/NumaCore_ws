@@ -34,6 +34,8 @@
   --nc-lens-dim:    #0F6E56;
   --nc-intake:      #7A7870;
   --nc-intake-dim:  #3C3B38;
+  --nc-rra:         #C9A24A;
+  --nc-rra-dim:     #8A6A22;
 
   /* PANEL ACCENTS (Lens) */
   --nc-pulse:       #E24B4A;
@@ -395,6 +397,11 @@ section.tight { padding: var(--space-3xl) 0; }
   radial-gradient(ellipse at 75% 30%, rgba(61, 201, 160, 0.14), transparent 60%),
   radial-gradient(ellipse at 5% 80%, rgba(136, 131, 212, 0.05), transparent 55%),
   linear-gradient(180deg, #030B12 0%, #030508 100%); }
+.page-header.accent-rra .eyebrow { color: var(--nc-rra); }
+.page-header.accent-rra { background:
+  radial-gradient(ellipse at 75% 30%, rgba(201, 162, 74, 0.14), transparent 60%),
+  radial-gradient(ellipse at 5% 80%, rgba(136, 131, 212, 0.05), transparent 55%),
+  linear-gradient(180deg, #0B0905 0%, #030508 100%); }
 
 /* BUTTONS */
 .btn {
@@ -440,6 +447,21 @@ section.tight { padding: var(--space-3xl) 0; }
   border-color: #85B7EB;
   box-shadow: 0 0 20px rgba(95, 168, 224, 0.35);
 }
+
+.btn-rra {
+  background: var(--nc-rra);
+  color: #1A1305;
+  border-color: var(--nc-rra);
+}
+.btn-rra:hover {
+  background: #D8B567;
+  border-color: #D8B567;
+  box-shadow: 0 0 20px rgba(201, 162, 74, 0.35);
+}
+
+/* two-up grid (RRA page) */
+.duo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
+@media (max-width: 880px) { .duo-grid { grid-template-columns: 1fr; } }
 
 .btn-ghost {
   background: transparent;
@@ -901,13 +923,13 @@ a.panel-card:hover {
   line-height: 1.55;
 }
 
-/* PILLAR PANEL (Stride strategic pillars) */
+/* PILLAR PANEL (Stride service principles) */
 .pillar-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
 }
-@media (max-width: 700px) { .pillar-grid { grid-template-columns: 1fr; } }
+@media (max-width: 880px) { .pillar-grid { grid-template-columns: 1fr; } }
 
 .pillar-card {
   background: var(--nc-deep);

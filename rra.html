@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reliability Risk Assessment &mdash; NumaCore</title>
+<meta name="description" content="The NumaCore Reliability Risk Assessment reads the work-order, condition-monitoring, operating-parameter, and component-life data you already collect but never read, and turns it into a prioritised, source-cited reliability picture &mdash; without a fly-in specialist, and with your data protected.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 54 54'%3E%3Cpath d='M27 4 L30 24 L50 27 L30 30 L27 50 L24 30 L4 27 L24 24 Z' fill='%235C58A8' opacity='0.3'/%3E%3Cpath d='M27 4 L30 24 L50 27 L30 30 L27 50 L24 30 L4 27 L24 24 Z' fill='none' stroke='%238883D4' stroke-width='2'/%3E%3Ccircle cx='27' cy='27' r='4' fill='%238883D4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Numa<span>Core</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-btn">Menu</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="lens.html">Lens</a></li>
+      <li><a href="rra.html" class="active">Reliability</a></li>
+      <li><a href="stride.html">Stride</a></li>
+      <li><a href="origin.html">Origin</a></li>
+      <li><a href="mailto:info@numacore.ca?subject=Stride%20enquiry" class="nav-cta">Enquire about Stride</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header accent-rra">
+  <div class="hero-glow" style="width:380px; height:380px; top:-120px; right:6%; background:#8A6A22; opacity:0.4; filter:blur(60px); position:absolute; border-radius:50%; pointer-events:none;"></div>
+  <div class="container">
+    <span class="eyebrow fade-up d-1">Reliability Risk Assessment</span>
+    <h1 class="fade-up d-2">The signals are already in your data.</h1>
+    <p class="lede fade-up d-3">Four streams you already collect &mdash; work-order history, condition monitoring, operating hours, component life &mdash; recorded, stored, and left to lie dormant. The brainpower that could join those dots up is only on site half the time, with very limited view of what happened while it was away. The Reliability Risk Assessment reads what nobody on site has time to read, remembers what the roster forgets, and hands you the few machines worth your attention this week &mdash; without a fly-in specialist, and with your data protected.</p>
+    <div class="btn-row fade-up d-4" style="margin-top: var(--space-xl);">
+      <a href="#proof" class="btn btn-rra">See it on a real machine &rarr;</a>
+      <a href="#what" class="btn btn-ghost">How it works</a>
+    </div>
+  </div>
+</header>
+
+<!-- THE PROBLEM: two leaks -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why it exists</span>
+      <h2>Two things leak away &mdash; and nobody invoices for the loss.</h2>
+      <p class="lede">The binding constraint on a remote site isn't analytical horsepower. It's attention, and it's memory. Most reliability failures aren't caused by missing data &mdash; they're caused by data and knowledge that already exist and never get joined up.</p>
+    </div>
+
+    <div class="duo-grid">
+      <div class="flow-step">
+        <div class="step-num" style="color:var(--nc-rra)">Leak 01 &middot; the data</div>
+        <h4>Recorded, stored, left to lie dormant.</h4>
+        <p>Every work order, every condition-monitoring sample, every hour and idle reading, every component swap is recorded and stored &mdash; typed into the system, logged off an instrument, or written up by hand. And then it lies there. Like seed left in the bag: full of potential, but nothing grows from it until it's given the right environment &mdash; the time, and the context, to read it. With no resident reliability engineer, that environment never arrives, and the early signals sit in storage, perfectly captured and completely unseen. The problem isn't missing data. It's <strong style="color:var(--nc-text)">dormant</strong> data.</p>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="color:var(--nc-rra)">Leak 02 &middot; the memory</div>
+        <h4>Walks onto a plane every rotation.</h4>
+        <p>The reliability knowledge that matters lives in people's heads. <em>"I changed that pump last month." "I saw this exact crack on the other dozer."</em> On even-time rotation, half of that memory is off site at any moment, and the handover rarely captures it. "Enjoy your time off &mdash; I won't phone you" is a humane thing to say. It's also the moment a piece of the site quietly <strong style="color:var(--nc-text)">forgets itself</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT IS -->
+<section id="what" style="background: var(--nc-void); border-top: 1px solid var(--nc-border); border-bottom: 1px solid var(--nc-border);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What it actually is</span>
+      <h2>Not "an AI report." Three disciplined layers.</h2>
+      <p class="lede">Give that dormant data the right environment and it grows into a decision. That environment isn't a model left to its own devices &mdash; it's three disciplined layers that turn raw transactions into a call a planner can trust. The deliverable looks like a report; the value is the engine behind it.</p>
+    </div>
+
+    <ul class="included">
+      <li>
+        <span class="num" style="color:var(--nc-rra)">01</span>
+        <div>
+          <strong>Consolidated data</strong>
+          <span>Four streams pulled into one coherent picture &mdash; work-order history, condition-monitoring data, operating parameters (hours, idling, load), and component-life history. It's the core, and it's growing: more of your own data streams fold in as they come online. This is the assembly grind a reliability engineer spends most of a site visit on before any thinking begins &mdash; handed over pre-built, so the analysis starts on hour one.</span>
+        </div>
+      </li>
+      <li>
+        <span class="num" style="color:var(--nc-rra)">02</span>
+        <div>
+          <strong>A domain knowledge base</strong>
+          <span>Component intervals, application profiles, and failure-mode libraries for this exact class of machine &mdash; the context to read the data against. The difference between "a number looks high" and "this is the documented failure mode for this final drive."</span>
+        </div>
+      </li>
+      <li>
+        <span class="num" style="color:var(--nc-rra)">03</span>
+        <div>
+          <strong>A disciplined protocol</strong>
+          <span>Confidence tags &mdash; confirmed, consistent, inferred, unverified &mdash; evidence before cause, source-cited findings, and a human in the loop. The discipline that keeps a fluent answer honest, and flags what it can't verify instead of papering over it.</span>
+        </div>
+      </li>
+    </ul>
+
+    <div class="panel-detail accent-cadence" style="border-top-color:var(--nc-rra-dim); margin-top: var(--space-2xl);">
+      <span class="panel-detail-eyebrow" style="color:var(--nc-rra)">The difference no individual can match</span>
+      <h3 style="color:var(--nc-rra)">It never rotates out, and it never forgets.</h3>
+      <p>The same engine that reads the data also holds the memory. "I saw this on the other dozer" stops being a half-remembered remark on a plane and becomes a queryable fact across the whole fleet, across years. A coolant route showing up in three machines, a shared legacy between two units &mdash; the signatures persist from one assessment to the next. The institutional memory stops leaking. That is the structural advantage over any individual, however good, who is by definition on roster.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROOF: SH01 -->
+<section id="proof">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The proof</span>
+      <h2>Why "just feed it to a chatbot" is the dangerous option.</h2>
+      <p class="lede">This isn't asserted &mdash; it's tested. We ran a controlled head-to-head on a single machine (we'll call it SH01): the same data, the same task, a capable model running <em>without</em> the disciplined harness, scored against our production standard. The unguarded run is the cautionary tale.</p>
+    </div>
+
+    <div class="duo-grid">
+      <div class="flow-step" style="border-color: rgba(239,68,68,0.3);">
+        <div class="step-num" style="color:var(--nc-crit)">Bare model &middot; no discipline</div>
+        <h4>Fluent, structured, and wrong.</h4>
+        <p>It invented a root cause the records flatly contradict. It manufactured a crisis &mdash; "shut down within 72 hours" &mdash; on a machine running twenty hours a day. It built a false story on a misread date. And it recited "an honest <em>unverified</em> beats a guess" the whole way through, sitting right next to a guess. The confident wrong answer, wearing the costume of the careful one.</p>
+      </div>
+      <div class="flow-step" style="border-color: var(--nc-rra-dim);">
+        <div class="step-num" style="color:var(--nc-rra)">The assessment &middot; with discipline</div>
+        <h4>The real read, with its workings shown.</h4>
+        <p>The same machine, run through the knowledge base, the protocol, and a human check: the actual failure mode surfaced from the work-order text, the over-grades pulled back to where the evidence sits, and every call tagged for how sure it is. The model is just an engine. The knowledge base, the protocol, and the verification are the product &mdash; strip them away and you get the column on the left.</p>
+      </div>
+    </div>
+    <p style="margin-top: var(--space-lg); color: var(--nc-text-m); font-size: 15px;">That's the free look. The example above is a real assessment on an anonymised machine &mdash; the same thing, run on your fleet, is a conversation away.</p>
+  </div>
+</section>
+
+<!-- WHERE IT PAYS -->
+<section style="background: var(--nc-void); border-top: 1px solid var(--nc-border); border-bottom: 1px solid var(--nc-border);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Where the value lands</span>
+      <h2>Three moves a stretched site can't make for itself.</h2>
+      <p class="lede">The return isn't a tidy report. It's three concrete things that happen because someone &mdash; finally &mdash; read the data and joined the dots.</p>
+    </div>
+
+    <div class="pillar-grid">
+      <div class="pillar-card accent-1">
+        <div class="pillar-num">Defect elimination</div>
+        <h3>Kill it once, bank it fleet-wide.</h3>
+        <p>The win isn't fixing one machine &mdash; it's spotting the repeat-failure signature across the fleet, removing the root cause for good, and carrying that fix to every like unit. That needs cross-unit pattern recognition the overwhelmed site never has time for.</p>
+      </div>
+      <div class="pillar-card accent-2">
+        <div class="pillar-num">PM program correction</div>
+        <h3>Fix the schedule, not just the fault.</h3>
+        <p>It catches where intervals no longer match the centreline, where PMs are being paper-closed, and where the real constraint is availability, not parts. That's the maintenance program improving &mdash; not just one defect found.</p>
+      </div>
+      <div class="pillar-card accent-3">
+        <div class="pillar-num">Attention triage</div>
+        <h3>Point the expensive eyes at the right place.</h3>
+        <p>It directs the scarce expert &mdash; and the wrench &mdash; at the ten components that matter, instead of a cold spreadsheet of hundreds. That is the whole point: protect and optimise human attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE BOUNDARY -->
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The honest boundary</span>
+      <h2>What it is &mdash; and what it deliberately isn't.</h2>
+    </div>
+    <div class="flow-step" style="border-left: 2px solid var(--nc-rra); max-width: 80ch;">
+      <p>It is a triage and screening layer &mdash; not a teardown verdict. It tells you where to point the expensive eyeballs; it does not replace the wrench that confirms the call. And it flags what it can't verify rather than papering over it &mdash; that honesty is the feature, not a caveat. A screen can't see inside a crankcase, and pretending otherwise would insult the people who can. So we sell it as deciding <em style="color:var(--nc-text); font-style:normal">where</em> the expert looks. That's defensible, and it's true.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DATA HANDLING: the friction-remover, underneath -->
+<section style="background: var(--nc-void); border-top: 1px solid var(--nc-border); border-bottom: 1px solid var(--nc-border);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">And your data stays yours</span>
+      <h2>Delivered inside your existing terms.</h2>
+      <p class="lede">The analysis engine runs in an isolated environment &mdash; not on a public AI service. Your data stays within your environment and doesn't pass to a third-party AI provider, so it stays within the confidentiality terms of your existing contract, with no new data agreement to negotiate and nothing to take to procurement. For engagements that require it, the engine runs fully air-gapped. The value comes to you; the data doesn't leave.</p>
+    </div>
+    <div class="flow-step" style="border-left: 2px solid var(--nc-rra); max-width: 72ch;">
+      <p>It doesn't make the call. It hands your team a recommendation &mdash; reasoning shown &mdash; so their attention lands on the few things that matter. You review; you decide.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA: funnel to Stride -->
+<section class="cta-section">
+  <div class="container-narrow">
+    <span class="eyebrow">The way you get it</span>
+    <h2>One assessment is a look. Stride is the habit.</h2>
+    <p class="lede">A Reliability Risk Assessment is how a NumaCore relationship begins &mdash; the first read of a fleet nobody's had time to read. Stride is the monthly engagement that keeps it current: the plan stays alive, the memory stops leaking, and the assessment becomes a rhythm instead of a one-off. The first conversation is a scoping call &mdash; no fee, no obligation.</p>
+    <div class="btn-row" style="justify-content:center;">
+      <a href="mailto:info@numacore.ca?subject=Reliability%20Risk%20Assessment%20enquiry" class="btn btn-rra">Start with an assessment</a>
+      <a href="stride.html" class="btn btn-ghost">See how Stride works</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-brand">Numa<span>Core</span></a>
+      <p>The platform behind long-range component planning for mobile mining fleets. Built and operated by Birchwood Advisory.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="platform.html">Platform</a></li>
+        <li><a href="lens.html">Lens</a></li>
+        <li><a href="rra.html">Reliability</a></li>
+        <li><a href="stride.html">Stride</a></li>
+        <li><a href="origin.html">Origin</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:info@numacore.ca">info@numacore.ca</a></li>
+        <li><a href="https://birchwood-advisory.com" target="_blank" rel="noopener">Birchwood Advisory &rarr;</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>&copy; 2026 NumaCore. All rights reserved.</span>
+    <span>Less noise. Better decisions.</span>
+  </div>
+</footer>
+
+</body>
+</html>
