@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Platform &mdash; NumaCore</title>
-<meta name="description" content="The NumaCore architecture: parent brand, Stride retainer service, Lens delivery engine. Companion tool: Intake. Single-file HTML, hub-and-spoke JSON, offline-first.">
+<meta name="description" content="The NumaCore architecture: parent brand, Stride retainer service, Lens delivery engine. Companion tool: Intake. Single-file HTML, hub-and-spoke JSON, local files.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 54 54'%3E%3Cpath d='M27 4 L30 24 L50 27 L30 30 L27 50 L24 30 L4 27 L24 24 Z' fill='%235C58A8' opacity='0.3'/%3E%3Cpath d='M27 4 L30 24 L50 27 L30 30 L27 50 L24 30 L4 27 L24 24 Z' fill='none' stroke='%238883D4' stroke-width='2'/%3E%3Ccircle cx='27' cy='27' r='4' fill='%238883D4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -154,8 +154,8 @@
         <span>Lens loads the client JSON at session start. Each tool writes only to its own designated slice. Lens saves the final file at session end. The file is the session record.</span>
       </li>
       <li>
-        <strong>Local file only &mdash; offline-first</strong>
-        <span>No server. No login. No network required. The advisor works on a laptop, on site, in a planning room with no signal. The tool runs.</span>
+        <strong>Local files &mdash; tools behind a sign-in</strong>
+        <span>The tools open from a private web address after a sign-in. They have no server of their own: the client's files are read from, and saved to, the folder the advisor opens on their own computer.</span>
       </li>
       <li>
         <strong>Tools are never distributed to clients</strong>
